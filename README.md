@@ -1,6 +1,6 @@
 # My Website
 ##### Theme by Moon (Jekyll)
-live @ [my.site](fathoni17.github.io)
+live [Here!](http://fathoni17.github.io/)
 
 ## Todo
 - [ ] Change all variable
