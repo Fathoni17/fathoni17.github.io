@@ -9,7 +9,6 @@ tag:
 - sample
 - test
 - jekyll
-comments: true
 ---
 
 ## HTML Elements
@@ -44,6 +43,10 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
 ## List Types
+
+Todo list
+- [x] Good
+- [ ] Bad
 
 ### Ordered Lists
 
