@@ -11,7 +11,7 @@ locale:             en_US
 url:                https://fathoni17.github.io/
 
 # Jekyll
-permalink:          :year/:month/:title/
+permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
