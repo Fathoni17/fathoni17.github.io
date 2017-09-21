@@ -44,10 +44,6 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 ## List Types
 
-Todo list
-- [x] Good
-- [ ] Bad
-
 ### Ordered Lists
 
 1. Item one
