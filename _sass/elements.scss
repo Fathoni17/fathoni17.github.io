@@ -22,7 +22,7 @@
 	@include font-rem(14);
 	margin: 4px auto;
 	@extend %btnextend;
-	&.btn-success {
+	  &.btn-success {
       background-color: $success;
       color: $white;
       border-color: $success;
@@ -70,6 +70,9 @@
         color: $info;
       }
     }
+}
+.btn-nav-back{
+  
 }
 .title .btn {
     margin: 10px;
@@ -193,7 +196,7 @@ kbd {
 
 // go up button
 .goup-container {
-    border-radius: 3px !important;
+    border-radius: 50% !important;
     border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka !important;
     border: 1px solid;
 	@media #{$small} {

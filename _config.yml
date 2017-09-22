@@ -36,31 +36,15 @@ disqus_shortname:   Fathoni17
   #verify:
   #ad-client:
   #ad-slot:
-#bing-verify:
 email:              muh.fathoni77@yahoo.co.id
-#github-url:         username
+github-url:         fathoni17
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 linkedin:           fathoni17
-#xing:              username
 instagram:          mfathonin
 facebook:           fathoni17
-twitter:            fathoni17
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
+#twitter:            fathoni17
 #youtube:           username
 #youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
 
 # Gems
 gems:
