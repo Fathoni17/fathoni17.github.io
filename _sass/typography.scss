@@ -89,6 +89,25 @@ figcaption {
 
 // links
 a {
+  text-decoration: none;
+  transition: color .4s;
+  color: $color_gray;
+  &:link {
+  	color: $color_gray;
+  }
+  &:visited {
+  	color: $color_gray;
+  }
+  &:hover {
+  	color: $white;
+  }
+  &:active {
+  	transition: color .3s;
+  	color: $white;
+  }
+}
+.default-a {
+  text-decoration: none;
   transition: color .4s;
   color: $color_shark;
   &:link {
@@ -105,6 +124,25 @@ a {
   	color: $maroon;
   }
 }
+.nonanimated-a {
+  text-decoration: none;
+//  transition: color .4s;
+  color: $black;
+  &:link {
+  	color: $black;
+  }
+  &:visited {
+  	color: $black;
+  }
+  &:hover {
+  	color: $black;
+  }
+  &:active {
+//  	transition: color .3s;
+  	color: $maroon;
+  }
+}
+
 
 // pre and code
 pre, code {
@@ -128,10 +166,6 @@ li .highlight pre {
     border: 0;
 }
 
-// table
-table {
-	width: 100%;
-}
 
 // notice
 .notice {

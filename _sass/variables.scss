@@ -30,11 +30,16 @@ $info		         : #308cbc;
 $font1               : Fira Sans,sans-serif;
 $font2               : Inconsolata;
 $alt-font            : serif;
-$doc-font-size       : 16;
+$doc-font-size       : 11.5;
 $doc-line-height     : 26;
 
 //media
-$small               : "only screen and (max-width: 30em)";
-$medium              : "only screen and (min-width: 30.1em) and (max-width: 48em)";
-$large               : "only screen and (min-width: 48.1em) and (max-width: 62.5em)";
-$notsmall            : "only screen and (min-width: 48em)";
+//40em   =  480px
+//70em   =  800px
+//104em  = 1000px
+// how to use: @media #{$small} 
+$small               : "only screen and (max-width: 40em)";
+$medium              : "only screen and (min-width: 40.1em) and (max-width: 70em)"; 
+$large               : "only screen and (min-width: 70.1em) and (max-width: 104em)";
+$notsmall            : "only screen and (min-width: 70.1em)";
+$notbig				 : "only screen and (max-width: 70em)";

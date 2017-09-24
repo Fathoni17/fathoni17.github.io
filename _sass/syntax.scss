@@ -1,15 +1,29 @@
 pre.highlight {
 	padding: 1em;
+	min-width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.kg-card-markdown figure{
+	padding: 0px !important;
+}
+.highlighter-rouge{
+	max-width: 100%;
+	overflow-x: auto;
 }
 
 .highlight {
+	max-width: 100%;
+	min-width: 100%;
 	background-color: #49483e;
 	font-family: $font2;
-	@include font-size(14);
+	@include font-size(11);
+	line-height: 1 !important;
 	color: #f8f8f2;
 	border-radius: 4px;
 	pre {
-		position: relative;
+		//position: relative;
 		margin: 0;
 		padding: 1em;
 	}

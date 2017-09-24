@@ -25,6 +25,7 @@
 	  &.btn-success {
       background-color: $success;
       color: $white;
+      box-shadow: none;
       border-color: $success;
       &:visited {
         color: $white;
@@ -37,6 +38,7 @@
     &.btn-warning {
       background-color: $warning;
       color: $white;
+      box-shadow: none;
       border-color: $warning;
       &:visited {
         color: $white;
@@ -49,6 +51,7 @@
     &.btn-danger {
       background-color: $danger;
       color: $white;
+      box-shadow: none;
       border-color: $danger;
       &:visited {
         color: $white;
@@ -61,6 +64,7 @@
     &.btn-info {
       background-color: $info;
       color: $white;
+      box-shadow: none;
       border-color: $info;
       &:visited {
         color: $white;
@@ -76,7 +80,7 @@
 }
 .title .btn {
     margin: 10px;
-    @include font-rem(16);
+    @include font-rem(12);
     font-weight:300;
 }
 .post-list {
@@ -85,12 +89,11 @@
     }
 }
 
-// hr break
 hr {
 	border: 0;
 	height: 1px;
 	opacity: .8;
-    margin: 1em 0;
+  margin: 1em 0;
 	background-image: -webkit-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
 	background-image: -moz-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
 	background-image: -ms-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
