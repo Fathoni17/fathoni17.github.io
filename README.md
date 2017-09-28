@@ -7,6 +7,7 @@ live [Here!](http://fathoni17.github.io/)
 - [ ] Make Beauty
 - [ ] Make CV page @about
 - [ ] Make blog
-- [ ] Customize like [Ghost](http://demo.ghost.io/)
+- [x] Customize like [Ghost](http://demo.ghost.io/)
+- [ ] Ghost responsive error.
 
 > Share life with love
