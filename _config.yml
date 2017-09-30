@@ -4,9 +4,9 @@ bio:                'My site, My blog, My Home.'
 description:        "My personal site for sharing everythings to you."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/pinned-octocat.svg'
 owner:              'assets/img/author/Fathoni'
-background:         'https://i.imgur.com/Nbi7bYI.jpg'
+background:         'assets/img/wallpaper.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://fathoni17.github.io

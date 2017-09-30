@@ -4,10 +4,10 @@ live [Here!](http://fathoni17.github.io/)
 
 ## Todo
 - [x] Change all variable
+- [x] Customize like [Ghost](http://demo.ghost.io/)
+- [x] Ghost responsive error.
 - [ ] Make Beauty
 - [ ] Make CV page @about
 - [ ] Make blog
-- [x] Customize like [Ghost](http://demo.ghost.io/)
-- [ ] Ghost responsive error (full-post right error).
 
 > Share life with love
