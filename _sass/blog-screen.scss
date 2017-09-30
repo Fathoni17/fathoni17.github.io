@@ -361,8 +361,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 15px 25px 10px 25px;
 }
 .author-profile-image {
-    width: 25px;
-    height: 25px;
+    width: 49px;
+    height: 49px;
     margin: 0 5px 0 0;
     display: inline-table;
     border-radius: 100%;
@@ -452,7 +452,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 header .entry-meta {
     display: none; // hide header meta on small screens
-    @media #{$notsmall} {
+}
+@media only screen and (min-width: 500px){
+    header .entry-meta {
         display: block;
     }
 }
@@ -583,6 +585,10 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 .first-page, .last-page{
     color: #aaa !important;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    padding: 0 3px;
 }
 span.page_number{
     display: inline-table;
@@ -610,7 +616,7 @@ span.page_number{
     padding: 6vw 3vw 3vw;
     text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-header {
         padding: 14vw 3vw 10vw;
     }
@@ -648,7 +654,7 @@ span.page_number{
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 1170px) {
+@media (max-width: 1170px) {
     .post-full-image {
         height: 600px;
         margin: 0 -4vw -100px;
@@ -656,7 +662,7 @@ span.page_number{
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .post-full-image {
         height: 400px;
     }
@@ -676,17 +682,17 @@ span.page_number{
     margin: 0 auto;
     padding: 70px 100px 0;
     background: #fff;
-    @media #{$small} {
-        padding: 0 .5em;
+    @media (min-width: 500px) {
+        padding: 5vw 7vw 0;
     };
 }
 
-@media only screen and (max-width: 1170px) {
+@media (max-width: 1170px) {
     .post-full-content {
         padding: 5vw 7vw 0;
     }
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .post-full-content {
         font-size: 1.1em;
     }
@@ -800,7 +806,7 @@ span.page_number{
     max-width: 1040px;
     margin: 1.5em auto;
 }
-@media only screen and (max-width: 1040px) {
+@media (max-width: 1040px) {
     .post-full-content img,
     .post-full-content video {
         width: 100%;
@@ -856,7 +862,7 @@ Usage (In Ghost editor):
     padding-right: 15%;
 }
 
-@media only screen and (min-width: 795px){
+@media (min-width: 795px){
     .post-full-content blockquote p {
         padding-right: 10%; 
     }
@@ -908,7 +914,7 @@ li .highlight pre {
     font-size: 2.3em;
     font-weight: 700;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-content h1 {
         font-size: 2em;
     }
@@ -919,7 +925,7 @@ li .highlight pre {
     font-size: 1.6em;
     font-weight: 700;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-content h2 {
         font-size: 1.4em;
     }
@@ -930,7 +936,7 @@ li .highlight pre {
     font-size: 1.2em;
     font-weight: 700;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-content h3 {
         font-size: 1em;
     }
@@ -941,7 +947,7 @@ li .highlight pre {
     font-size: 1.15em;
     font-weight: 700;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-content h4 {
         font-size: 1em;
     }
@@ -958,13 +964,13 @@ li .highlight pre {
     line-height: 1.35em;
     text-align: center;
 }
-@media only screen and (min-width: 1180px) {
+@media (min-width: 1180px) {
     .post-full-content h5 {
         width: 100vw;
         max-width: 1060px;
     }
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-content h5 {
         padding: 0 0 0.5em;
         font-size: 1em;
@@ -976,7 +982,7 @@ li .highlight pre {
     font-size: 0.95em;
     font-weight: 700;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-content h6 {
         font-size: 0.85em;
     }
@@ -1003,7 +1009,7 @@ li .highlight pre {
 }
 
 /* Some grouped styles for smaller viewports */
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .post-full-meta {
         font-size: 1.2rem;
         line-height: 1.3em;
@@ -1315,7 +1321,7 @@ li .highlight pre {
     background-color: var(--blue);
 }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .floating-header {
         height: 40px;
     }
@@ -1331,7 +1337,7 @@ li .highlight pre {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .floating-header-logo {
         margin-left: 10px;
     }
@@ -1344,7 +1350,7 @@ li .highlight pre {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
     .floating-header-share-label {
         display: none;
     }
@@ -1406,7 +1412,7 @@ li .highlight pre {
     display: none;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
     .site-footer-content {
         flex-direction: column;
     }

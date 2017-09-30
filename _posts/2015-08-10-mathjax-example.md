@@ -4,6 +4,7 @@ title:  "MathJax Example"
 date:   2015-08-10
 excerpt: "MathJax Example for Moon Jekyll Theme."
 project: true
+feature: http://www.launchpadapps.com.au/wp-content/uploads/2015/08/Photo-credit-Essential-App-Marketing-1-1030x687.jpg
 tag:
 - markdown 
 - mathjax

@@ -8,6 +8,6 @@ live [Here!](http://fathoni17.github.io/)
 - [ ] Make CV page @about
 - [ ] Make blog
 - [x] Customize like [Ghost](http://demo.ghost.io/)
-- [ ] Ghost responsive error.
+- [ ] Ghost responsive error (full-post right error).
 
 > Share life with love
