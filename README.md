@@ -9,5 +9,6 @@ live [Here!](http://fathoni17.github.io/)
 - [ ] Make Beauty
 - [ ] Make CV page @about
 - [ ] Make blog
+- [ ] Post!
 
 > Share life with love
