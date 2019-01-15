@@ -254,10 +254,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #eeeeee;
     opacity: 0.65;
+    font-weight: 400;
 }
-
+.nav .nav-current a{
+    opacity: 1;
+}
 .nav li a:hover {
     text-decoration: none;
     opacity: 1;
@@ -270,7 +273,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 40px;
 }
 
-.social-links {
+.social-links{
     color: #DDD;
     flex-shrink: 0;
     display: flex;
@@ -289,18 +292,18 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #fff;
     background-color: none;
 }
-.social-link a{
+.social-links a{
     display: block;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 10px;
-    color: #fff;
+    color: #ddd;
     text-decoration: none;
     opacity: 0.65;
 }
 
-.social-link a:hover {
+.social-links a:hover {
     color: #FFF;
     opacity: 1;
 }

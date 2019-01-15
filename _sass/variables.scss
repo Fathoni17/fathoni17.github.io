@@ -24,11 +24,11 @@ $comp-color 	     : complement(#222);
 $success			 : #5cb85c;
 $warning			 : #dd8338;
 $danger				 : #C64537;
-$info		         : #308cbc;
+$info		         : rgb(77, 169, 255);
 
 //fonts
 $font1               : Fira Sans,sans-serif;
-$font2               : Inconsolata;
+$font2               : consolas;
 $alt-font            : serif;
 $doc-font-size       : 11.5;
 $doc-line-height     : 26;

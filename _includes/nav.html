@@ -50,9 +50,11 @@
 	        {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
+            {% if link.in_nav %}
 		    <li>
                 <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a>
             </li>
+            {% endif %}
 		  {% endfor %}
 		</ul><!-- /.dl-menu -->
 	</nav><!-- /.dl-menuwrapper -->

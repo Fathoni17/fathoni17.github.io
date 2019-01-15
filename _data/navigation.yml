@@ -1,7 +1,16 @@
 # Site navigation links
+- title: Beranda
+  url: /
+  in_nav: false
+
+- title: Projects
+  url: /projects/
+  in_nav: true
 
 - title: Blog
   url: /blog/
+  in_nav: true
   
-- title: Projects
-  url: /projects/
+- title: Tentang Saya
+  url: /about/
+  in_nav: false

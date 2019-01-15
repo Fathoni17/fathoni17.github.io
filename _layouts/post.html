@@ -29,12 +29,13 @@ layout: compress
             <div class="site-nav-left">
                 <ul class="nav">
                     {% if page.projetc != true %}
-                    <li class="nav-home" role="presentation"><a href="{{ site.url }}/projects/">Home</a></li>
+                    <li class="nav-home" role="presentation"><a href="{{ site.url }}/">Home</a></li>
+                    <li class="nav-home" role="presentation"><a href="{{ site.url }}/projects/">Projects</a></li>
                     <li class="nav-home" role="presentation"><a href="{{ site.url }}/blog/">Blog</a></li>
                     {% else %}
                     <li class="nav-home" role="presentation"><a href="{{ site.url }}/blog/">Home</a></li>
                     {% endif %}
-                    <li class="nav-home" role="presentation"><a href="{{ site.url }}/tags/">Tags</a></li>
+                    <!--<li class="nav-home" role="presentation"><a href="{{ site.url }}/tags/">Tags</a></li>-->
                     <li class="nav-about" role="presentation"><a href="{{ site.url }}/about/">About</a></li>
                 </ul>
             </div>
@@ -130,8 +131,8 @@ layout: compress
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
                 <section class="copyright">
-                    <b style="font-size: 14px; font-weight: 400"><a href="{{ site.url }}">Fathoni17</a> &copy; 2017</b><br />
-                    <i style="font-size: 9px;">Theme by <a href="ghost.org" target="_blank">Ghost</a></i>
+                    <b style="font-size: 14px; font-weight: 400">Fathoni17 &copy; 2017</b><br />
+                    <i style="font-size: 9px;">Theme by <a href="http://ghost.org" target="_blank">Ghost</a></i>
                 </section>
                 <nav class="site-footer-nav" style="font-size: 25px; line-height: 25px;">
                     {% if site.instagram %}

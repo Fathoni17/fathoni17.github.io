@@ -56,7 +56,7 @@ h3.title a {
 			color: $color_shark;
 			font-weight: bolder;
             &:hover {
-                color: $red;
+                color: $info;
             }
 		}
 		p {
@@ -91,15 +91,15 @@ figcaption {
 a {
   text-decoration: none;
   transition: color .4s;
-  color: $color_gray;
+  color: #383838;
   &:link {
-  	color: $color_gray;
+  	color: #383838;
   }
   &:visited {
-  	color: $color_gray;
+  	color: #383838;
   }
   &:hover {
-  	color: $white;
+  	color: $info;
   }
   &:active {
   	transition: color .3s;
@@ -117,7 +117,7 @@ a {
   	color: $color_tuatara;
   }
   &:hover {
-  	color: $red;
+  	color: $info;
   }
   &:active {
   	transition: color .3s;
