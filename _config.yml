@@ -17,15 +17,19 @@ collections:
   projects:
     output: true
     permalink: /projects/:year/:month/:title/
- 
-pagination: 
-  enabled: true  
-  per_page: 4
-  collection: 'projects'
-  sort_reverse: true
-  trail: 
-    before: 2
-    after: 2
+  blog:
+    output: true
+    permalink: /blog/:year/:month/:title/
+    
+#paginate: 4
+#pagination: 
+#  enabled: true  
+#  per_page: 4
+#  collection: 'projects'
+#  sort_reverse: true
+#  trail: 
+#    before: 2
+#    after: 2
 
 # Jekyll
 #permalink:          :year/:month/:title/
