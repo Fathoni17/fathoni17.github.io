@@ -275,7 +275,8 @@ layout: compress
                 </div>
             </nav>
         </div>
-        {% for post in site.blog limit:1 %} 
+        {% assign sorted = site.blog | sort: 'date' | reverse %}
+        {% for post in sorted limit:1 %} 
         <div class="headertop">
             <div class="headertop-img-container">
                 <img style="width: 1500px; margin-top: -250px;" src="{{ post.feature }}" class="headertop-img" alt>
@@ -322,7 +323,8 @@ layout: compress
             <div class="wrapper animated fadeIn">
                 <div class="content">
                     <div class="post-list">
-                        {% for post in site.blog %} 
+                        {% assign sorted = site.blog | sort: 'date' | reverse %}
+                        {% for post in sorted %} 
                         {% if post.feature %}
                         <div class="postcard-list wow fadeInUp" data-wow-duration=".75s">
                             <div class="post-list-feature"><img class="img-feature" src="{{post.feature}}"></div>

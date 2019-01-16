@@ -78,7 +78,8 @@ layout: compress
     <div class="inner">
         <div class="post-feed">
 
-{% for post in site.projects %} 
+{% assign sorted = site.projects | sort: 'date' | reverse %}
+{% for post in sorted %} 
             <article class="post-card post tag-getting-started">
                 <a class="post-card-image-link default-a" href="{{ site.url }}{{ post.url }}">
                     <div class="post-card-image" style="background-image: url({{ post.feature }}); background-color: #bbb;"></div>
