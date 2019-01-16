@@ -108,7 +108,7 @@ layout: compress
                     </a>
                     <div class="entry-meta">
                         <span class="post-card-tags">
-                            {% for tag in post.tags %}
+                            {% for tag in post.tags limit:3 %}
                                 {% unless tag == empty %}
                                 <a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="default-a tag">
                                     <center class="term" style="padding: 2px 3px;">{{ tag }}</center>

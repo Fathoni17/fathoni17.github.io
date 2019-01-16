@@ -20,7 +20,7 @@ collections:
   blog:
     output: true
     permalink: /blog/:year/:month/:title/
-    
+
 #paginate: 4
 #pagination: 
 #  enabled: true  
@@ -69,7 +69,7 @@ facebook:           fathoni17
 
 # Gems
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
