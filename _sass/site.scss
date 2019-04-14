@@ -116,6 +116,99 @@ body {
 	    box-shadow: none;
 	}
 }
+.wrapper.blogpage {
+	width: 85%;
+	max-width: 1050px;
+	margin: 4rem auto;
+	color: $color_tuatara;
+	border-radius: 3px;
+	@include transition(.5s);
+	@media only screen and (min-width: 731px) and (max-width: 960px) {
+		max-width: 90%;
+		width: 100%;
+		margin: 1rem auto;
+		padding: 0px;
+	    box-shadow: none;
+	}
+	@media only screen and (max-width: 730px){
+		margin: 0px;
+		width: 100%;
+		max-width: none;
+	}
+}
+.wrapper.blogpage .postcard-list.wow{
+	@media only screen and (min-width: 500px) and (max-width: 730px){
+		display: inherit;
+		width: 95%;
+		margin: 1rem auto;
+	}
+	@media only screen and (max-width: 500px){
+		display: inherit;
+		width: 95%;
+		margin: 1rem auto;
+	}
+}
+.headertop.blogpage{
+	@media only screen and (max-width: 500px){
+		display: none;
+	}
+}
+
+.wrapper.cvpage {
+	width: 80%;
+	max-width: 850px;
+	margin: 4rem auto;
+	background: $white;
+	color: $color_tuatara;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	@include transition(.5s);
+	@media only screen and (min-width: 731px) and (max-width: 910px) {
+		max-width: none;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	    box-shadow: none;
+	}
+	@media only screen and (max-width: 730px){
+		margin: 0px;
+		width: 100%;
+		max-width: none;
+	}
+}
+.wrapper.cvpage .content{
+	@media only screen and (max-width: 730px) {
+		display: inherit;
+	}
+}
+.wrapper.cvpage .fotoborder{
+	@media only screen and (max-width: 730px) {
+		width: 50%;
+	}
+}
+.wrapper.cvpage .content .leftside{
+	width: 31%; 
+	background-color: #dddddd;
+	padding: 2%;
+	display: inline-block;
+	text-align: -webkit-center;
+	vertical-align: top;
+	@media only screen and (max-width: 730px) {
+		width: 100%;
+		padding: 5%;
+	}
+}
+.wrapper.cvpage .content .main_cv{
+	width: 67%;
+	padding: 1.5% 2%;
+	display: inline-block;
+	vertical-align: top;
+	@media only screen and (max-width: 730px) {
+		padding: 5%;
+		width: 100%;
+	}
+}
+
 #disqus_thread {
 	width: 75%;
 	max-width: 850px;
