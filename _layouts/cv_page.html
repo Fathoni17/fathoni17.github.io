@@ -72,7 +72,6 @@ layout: compress
         }
         .data.achievements .list{
             display: inline-block;
-            width: 45%;
             margin: 1% 1%;
         }
         .fotoborder{
@@ -109,15 +108,6 @@ layout: compress
             margin: 2% 1%;
             vertical-align: top;
         }
-        .list.year{
-            font-size: 15pt;
-            width: 10%;
-            display: inline-block;
-            vertical-align: top;
-            line-height: 100%;
-            padding-top: 2.25%;
-            padding-left: 2%;
-        }
         .list.education{
             display: inline-block;
         }
@@ -140,33 +130,7 @@ layout: compress
             font-size: 12pt;
             width: 100%;
         }
-        .data.skill .list.line .skill_name{
-            width: 18%;
-            padding-left: 1%;
-            display: inline-block;
-            font-size: 11pt;
-            vertical-align: middle;
-        }
-        .data.skill .list.line .skill_bar{
-            width: 25%;
-            margin-right: 5%;
-            height: 20px;
-            border-radius: 10px;
-            vertical-align: middle;
-            position: relative;
-            color: bisque;
-            display: inline-block;
-            background-color: #999999;
-        }
-        .data.skill .list.line .skill_bar .value{
-            background-color: #222222;
-            color: #dddddd;
-            text-align: center;
-            font-size: 8pt;
-            line-height: 21px;
-            height: 100%;
-            border-radius: 10px;
-        }
+
     </style>
 </head>
 <body>
@@ -180,26 +144,37 @@ layout: compress
                     <div class="fotoborder">
                         <img class="data foto" src="{{ site.url }}/{{ site.owner }}"></img>
                     </div>
+                    <div class="data profile mobileshow">
+                        <center>
+                            <span style="font-size:27px;">Muhammad <b>Fathoni</b> N.</span>
+                            <h6>Electrical Engineer Student</h6>
+                        </center>
+                        <hr><h4>{{ page.items[4].name | upcase }}</h4>
+                        <p">{{page.items[4].data}}</p>
+                    </div>
                     {% for item in page.items offset: 0 limit: 4 %}
                     <div class="data {{ item.name}}">
                         <hr><h4>{{ item.name | upcase }}</h4>
                         {% for data in item.data %}
-                            {% if item.name == "contact" %}
-                            <div><i class="{{ item.list[forloop.index0] }}"></i><p>{{ data }}</p></div>
-                            {% endif %}{% if item.name == "personal" %}
+                            {% if item.name == "personal" %}
                             <p><b>{{ item.list[forloop.index0] }}</b> - {{ data }}</p>
                             {% endif %}{% if item.name == "interest" %}
                             <li>{{ data }}</li>
-                            {% endif %}{% if item.name == "connect" %}
+                            {% endif %}{% if item.name == "contact" %}
+                            <div><i class="{{ item.list[forloop.index0] }}"></i><p>{{ data }}</p></div>
+                            {% endif %}{% if item.name == "social" %}
                             <p><i><a href="http://{{ data }}" target="_blank"><i class="fa fa-fw fa-{{ item.list[forloop.index0] }}"></i> {{ data }}</a></i></p>
                             {% endif %}
                         {% endfor %}
                     </div>
                     {% endfor %}
+                    <!-- <hr class="lastline"> -->
                 </div>
                 <div class="main_cv">
-                    <h1>{{ site.fullname }}</h1>
-                    <h6>Electrical Engineer Student</h6>
+                    <div class="data intro">
+                        <h1>{{ site.fullname }}</h1>
+                        <h6>Electrical Engineer Student</h6>
+                    </div>
                     {% for item in page.items offset: 4 limit: 4 %}
                     <div class="data {{ item.name }}">
                         <hr><h4>{{ item.name | upcase }}</h4>
@@ -240,6 +215,17 @@ layout: compress
                         {%endfor%}
                     </div>
                     {%endfor%}    
+                    <div class="data contact mobileshow">
+                        <hr><h4>{{ page.items[1].name | upcase }}</h4>
+                        {% for data in page.items[1].data %}
+                        <div><i class="{{ page.items[1].list[forloop.index0] }}"></i><p>{{ data }}</p></div>
+                        {%endfor%}
+                        <div class="socialfooter">
+                            {% for data in page.items[3].data %}
+                            <div class="sociallink"><a href="http://{{ data }}" target="_blank"><i class="fa fa-fw fa-{{ page.items[3].list[forloop.index0] }}"></i></a></div>
+                            {%endfor%}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

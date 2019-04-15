@@ -176,6 +176,12 @@ body {
 		max-width: none;
 	}
 }
+.wrapper.cvpage .lastline{
+	display: none;
+	@media only screen and (max-width: 730px){
+		display: block;
+	}
+}
 .wrapper.cvpage .content{
 	@media only screen and (max-width: 730px) {
 		display: inherit;
@@ -195,7 +201,51 @@ body {
 	vertical-align: top;
 	@media only screen and (max-width: 730px) {
 		width: 100%;
-		padding: 5%;
+		padding: 5% 5% 0px 5%;
+		background-color: #ffffff;
+	}
+}
+.wrapper.cvpage .mobileshow{
+	display: none;
+	@media only screen and (max-width: 730px) {
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 730px) {
+	.wrapper.cvpage .data.contact{
+		display: none;
+	}
+	.wrapper.cvpage .data.social{
+		display: none;
+	}
+	.wrapper.cvpage .data.intro{
+		display: none;
+	}	
+	.wrapper.cvpage .data.profile{
+		display: none;
+	}
+	.wrapper.cvpage .data.profile.mobileshow{
+		display: inline-block;
+	}
+	.wrapper.cvpage .data.contact.mobileshow{
+		display: inline-block;
+	}
+	.wrapper.cvpage .socialfooter{
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		margin: 10px 0 0 0;
+		padding: 10px 0;
+		background-color: #222222;
+		height: 55px;
+		text-align: center;
+	}
+	.wrapper.cvpage .socialfooter a{
+		color: #ffffff;
+	}
+	.wrapper.cvpage .data.contact.mobileshow .sociallink{
+		display: unset;
+		margin: auto 15px;
 	}
 }
 .wrapper.cvpage .content .main_cv{
@@ -204,9 +254,54 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	@media only screen and (max-width: 730px) {
-		padding: 5%;
+		padding: 0px 5% 5% 5%;
 		width: 100%;
 	}
+}
+.wrapper.cvpage .list.year{
+	font-size: 15pt;
+	width: 10%;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 100%;
+	padding-top: 2.25%;
+	padding-left: 2%;
+	@media only screen and (max-width: 730px) {
+		width: 3.3rem;
+	}
+}
+.data.skill .list.line .skill_name{
+	width: 18%;
+	padding-left: 1%;
+	display: inline-block;
+	font-size: 11pt;
+	vertical-align: middle;
+	@media only screen and (max-width: 730px) {
+		width: 35%;
+	}
+}
+.data.skill .list.line .skill_bar{
+	width: 25%;
+	margin-right: 5%;
+	height: 20px;
+	border-radius: 10px;
+	vertical-align: middle;
+	position: relative;
+	color: bisque;
+	display: inline-block;
+	background-color: #999999;
+	@media only screen and (max-width: 730px) {
+		width: 50%;
+	}
+}
+.data.skill .list.line .skill_bar .value{
+	background-color: #222222;
+	color: #dddddd;
+	text-align: center;
+	font-size: 8pt;
+	line-height: 21px;
+	height: 100%;
+	border-radius: 10px;
 }
 
 #disqus_thread {
