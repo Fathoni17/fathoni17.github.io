@@ -116,6 +116,8 @@ body {
 	    box-shadow: none;
 	}
 }
+////////////////////////////////////////////////////
+// Blog Page
 .wrapper.blogpage {
 	width: 85%;
 	max-width: 1050px;
@@ -157,7 +159,8 @@ body {
 		display: none;
 	}
 }
-
+////////////////////////////////////////////////////
+// About / CV
 .wrapper.cvpage {
 	width: 80%;
 	max-width: 850px;
@@ -178,12 +181,6 @@ body {
 		margin: 0px;
 		width: 100%;
 		max-width: none;
-	}
-}
-.wrapper.cvpage .lastline{
-	display: none;
-	@media only screen and (max-width: 730px){
-		display: block;
 	}
 }
 .wrapper.cvpage .content{
@@ -307,7 +304,158 @@ body {
 	height: 100%;
 	border-radius: 10px;
 }
-
+////////////////////////////////////////////////////
+// page 404
+.wrapper.page404 {
+	border-radius: 10px;
+	max-width: 950px;
+	height: 500px;
+	max-height: 500px;
+	display: flex;
+}
+.wrapper.page404 .content{
+	display: flex;
+	position: relative;
+	left: -10%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.wrapper.page404 .content .left{
+	height: auto;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+}
+.wrapper.page404 .content .right{
+	height: auto;
+	width: 45%;
+	position: relative;
+	display: inline-block;
+}
+.wrapper.page404 .dl-menuwrapper{
+	position: relative;
+	left: -5px;
+	top: -5px;
+}	
+.wrapper.page404 .img404{
+	vertical-align: middle;
+	position: absolute;
+	top: 5rem;
+	width: 13rem;
+	left: 0rem;
+}
+.wrapper.page404 .head404 {
+	color:#999999; 
+	font-size: 110pt;
+	margin: 25% 0 0 0; 
+	line-height: normal; 
+	font-weight: 800;
+}
+.wrapper.page404 .bold404{
+	margin:0; 
+	font-size: 13pt;
+}
+.wrapper.page404 .desc404{
+	margin:0; 
+	font-size: 11pt; 
+	color: #000000;
+}
+.wrapper.page404 .back404{
+	color: #000000; 
+	margin: 20px 0 0 0; 
+	font-size: 13pt;
+}
+@media only screen and (min-width:940px) and (max-width:1050px){
+	.wrapper.page404 .img404{
+		position: absolute;
+		top: 5rem;
+		width: 13rem;
+		left: -2rem;
+	}
+}
+@media only screen and (min-width:700px) and (max-width:940px){
+	.wrapper.page404 {
+		width: 100%;
+		max-width: 90%;
+		height: 430px;
+		margin: 1.5rem auto;
+	}
+	.wrapper.page404 .img404{
+		position: absolute;
+		top: 5rem;
+		width: 13rem;
+		left: -3rem;
+	}
+	.wrapper.page404 .head404{
+		font-size: 90pt;
+	}
+	.wrapper.page404 .bold404, .wrapper.page404 .back404{
+		font-size: 11pt;
+	}
+	.wrapper.page404 .desc404{
+		font-size: 10pt;
+	}
+}
+@media only screen and (min-width:642px) and (max-width:700px){
+	.wrapper.page404 {
+		width: 100%;
+		max-width: 95%;
+	}
+	.wrapper.page404 .content{
+		display: inline;
+		left: -5.5rem;
+	}
+	.wrapper.page404 .content .left, .wrapper.page404 .content .right{
+		position: unset;
+		width: 100%;
+		text-align: center;
+	}
+	.wrapper.page404 .img404{
+		position: inherit;
+		top: 5rem;
+		width: 10rem;
+		left: -3rem;
+	}
+	.wrapper.page404 .head404{
+		font-size: 70pt;
+		margin: 0;
+	}
+}
+@media only screen and (max-width:642px){
+	.wrapper.page404{
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.wrapper.page404 .content{
+		position: unset;
+		display: inline;
+		left: 0;
+	}
+	.wrapper.page404 .content .left, .wrapper.page404 .content .right{
+		position: unset;
+		width: 100%;
+		text-align: center;
+		padding: 0 1.5rem;
+	}
+	.wrapper.page404 .img404{
+		position: inherit;
+		top: 5rem;
+		width: 7rem;
+		left: -3rem;
+	}
+	.wrapper.page404 .head404{
+		font-size: 70pt;
+		margin: 0;
+	}
+	.wrapper.page404 .dl-menuwrapper{
+		position: fixed;
+		top:0;
+		left: 0;
+	}
+}
+////////////////////////////////////////////////////
 #disqus_thread {
 	width: 75%;
 	max-width: 850px;
